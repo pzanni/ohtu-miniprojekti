@@ -12,3 +12,5 @@ description = """ohtu-miniprojekti"""
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
