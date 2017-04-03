@@ -3,7 +3,6 @@ package com.ohtu.views;
 import java.util.Arrays;
 import java.util.List;
 
-import com.ohtu.app.Main;
 import com.ohtu.models.Reference;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.View;
