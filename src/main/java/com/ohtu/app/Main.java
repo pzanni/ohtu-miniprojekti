@@ -12,7 +12,7 @@ import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.UI;
 
 @SuppressWarnings("serial")
-@Theme("mytheme")
+@Theme("valo")
 public class Main extends UI {
 
 	@Override

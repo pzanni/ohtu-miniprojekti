@@ -12,5 +12,20 @@ description = """ohtu-miniprojekti"""
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.eclipse.jetty:jetty-runner:9.4.3.v20170317'
+}
+
+
+task copyLibs(type: Copy) {
+    into "$buildDir/libs"
+    from configurations.runtime
+}
+build.dependsOn copyLibs
+
 task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
