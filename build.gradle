@@ -3,6 +3,8 @@ plugins {
 }
 
 apply plugin: 'eclipse'
+apply plugin:'java'
+apply plugin:'application'
 
 group = 'com.ohtu'
 version = '1.0-SNAPSHOT'
