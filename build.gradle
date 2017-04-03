@@ -1,0 +1,14 @@
+plugins {
+  id "fi.jasoft.plugin.vaadin" version "1.1.7"
+}
+
+apply plugin: 'eclipse'
+
+group = 'com.ohtu'
+version = '1.0-SNAPSHOT'
+
+description = """ohtu-miniprojekti"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
