@@ -1,5 +1,6 @@
 package com.ohtu.app;
 
+import com.ohtu.data.FakeDatabase;
 import javax.servlet.annotation.WebServlet;
 
 import com.ohtu.views.AddView;
@@ -17,7 +18,10 @@ public class Main extends UI {
 
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
-		getPage().setTitle("Main page - Title");
+
+            FakeDatabase fd = new FakeDatabase();
+            
+            getPage().setTitle("Main page - Title");
 
 		Navigator navigator = new Navigator(this, this);
 		navigator.addView("", new MainView(navigator));
