@@ -1,5 +1,7 @@
 package com.ohtu.models;
 
+import com.ohtu.data.DAO;
+
 public class Reference {
 	private String author, title;
 	private int year;
@@ -26,4 +28,9 @@ public class Reference {
 	public String toString() {
 		return "";
 	}
+        
+        public void save() {
+            DAO dao = new DAO();
+            dao.addReference(this);
+        }
 }
