@@ -20,6 +20,16 @@ public class ReferenceTest {
     }
     
     @Test
+    public void settersWork() {
+        ref.setAuthor("J.K. Rowling");
+        assertEquals("J.K. Rowling", ref.getAuthor());
+        ref.setTitle("Harry Potter");
+        assertEquals("Harry Potter", ref.getTitle());
+        ref.setYear(1995);
+        assertEquals(1995, ref.getYear());
+    }
+    
+    @Test
     public void toStringReturnsCorrectString() {
         assertEquals("", ref.toString());
     }
