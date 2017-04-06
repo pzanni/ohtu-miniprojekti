@@ -14,7 +14,7 @@ import ohtu.views.AddView;
 import ohtu.views.MainView;
 
 @SuppressWarnings("serial")
-@Theme("mytheme")
+@Theme("valo")
 public class Main extends UI {
 
 	@Override
