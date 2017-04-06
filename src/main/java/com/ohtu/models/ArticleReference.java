@@ -1,16 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.ohtu.models;
 
 import com.ohtu.data.DAO;
 
-/**
- *
- * @author pullis
- */
+
 public class ArticleReference extends Reference {
     
     String journal, note, key, volume;
@@ -90,6 +83,6 @@ public class ArticleReference extends Reference {
         
     public void save() {
         DAO dao = new DAO();
-        dao.addReference(this);
+        dao.addArticleReference(this);
     }
 }
