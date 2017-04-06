@@ -1,8 +1,5 @@
-package com.ohtu.views;
+package ohtu.views;
 
-import com.ohtu.data.DAO;
-import com.ohtu.models.ArticleReference;
-import com.ohtu.models.Reference;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
@@ -10,6 +7,11 @@ import com.vaadin.ui.Button;
 import com.vaadin.ui.Grid;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.VerticalLayout;
+
+import ohtu.data.DAO;
+import ohtu.models.ArticleReference;
+import ohtu.models.Reference;
+
 import java.util.ArrayList;
 
 @SuppressWarnings("serial")

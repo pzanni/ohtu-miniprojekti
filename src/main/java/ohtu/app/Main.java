@@ -1,16 +1,17 @@
-package com.ohtu.app;
+package ohtu.app;
 
-import com.ohtu.data.FakeDatabase;
 import javax.servlet.annotation.WebServlet;
 
-import com.ohtu.views.AddView;
-import com.ohtu.views.MainView;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.UI;
+
+import ohtu.data.FakeDatabase;
+import ohtu.views.AddView;
+import ohtu.views.MainView;
 
 @SuppressWarnings("serial")
 @Theme("mytheme")

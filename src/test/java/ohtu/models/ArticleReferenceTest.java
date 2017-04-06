@@ -1,9 +1,11 @@
 
-package com.ohtu.models;
+package ohtu.models;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
+
+import ohtu.models.ArticleReference;
 
 /**
  *

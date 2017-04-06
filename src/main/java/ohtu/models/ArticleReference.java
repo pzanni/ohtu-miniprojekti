@@ -1,7 +1,7 @@
 
-package com.ohtu.models;
+package ohtu.models;
 
-import com.ohtu.data.DAO;
+import ohtu.data.DAO;
 
 
 public class ArticleReference extends Reference {

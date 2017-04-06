@@ -1,9 +1,10 @@
 
-package com.ohtu.data;
+package ohtu.data;
 
-import com.ohtu.models.ArticleReference;
-import com.ohtu.models.Reference;
 import java.util.ArrayList;
+
+import ohtu.models.ArticleReference;
+import ohtu.models.Reference;
 
 public class FakeDatabase {
     

@@ -1,6 +1,9 @@
-package com.ohtu.models;
+package ohtu.models;
 
 import org.junit.Test;
+
+import ohtu.models.Reference;
+
 import static org.junit.Assert.*;
 import org.junit.Before;
 

@@ -1,4 +1,4 @@
-package com.ohtu.models;
+package ohtu.models;
 
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Notification;
