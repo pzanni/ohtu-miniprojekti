@@ -10,29 +10,29 @@ import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.UI;
 
 import ohtu.data.FakeDatabase;
-import ohtu.views.AddView;
+import ohtu.data.ReferenceDAO;
+import ohtu.views.AddViewImpl;
 import ohtu.views.MainView;
 
 @SuppressWarnings("serial")
-@Theme("valo")
+@Theme("mytheme")
 public class Main extends UI {
 
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
 
-            FakeDatabase fd = new FakeDatabase();
-            
-            getPage().setTitle("Main page - Title");
+		ReferenceDAO dao = new ReferenceDAO(new FakeDatabase());
+
+		getPage().setTitle("Main page - Title");
 
 		Navigator navigator = new Navigator(this, this);
-		navigator.addView("", new MainView(navigator));
-		navigator.addView("addRefs", new AddView(navigator));
+		navigator.addView("", new MainView());
+		navigator.addView("addRefs", new AddViewImpl(dao));
 	}
 
-	
 	@WebServlet(urlPatterns = "/*", asyncSupported = true)
 	@VaadinServletConfiguration(ui = Main.class, productionMode = false)
 	public static class MyUIServlet extends VaadinServlet {
 	}
-	
+
 }

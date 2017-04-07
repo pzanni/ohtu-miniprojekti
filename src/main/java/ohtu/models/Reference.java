@@ -1,48 +1,38 @@
 package ohtu.models;
 
-import ohtu.data.DAO;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Reference {
-	private String author, title;
-	private int year;
-	
-	public Reference(String title, String author, int year) {
-		this.title = title;
-		this.author = author;
-		this.year = year;
+	private Map<String, String> fields;
+
+	public Reference() {
+		fields = new HashMap<>();
 	}
 	
-	public String getTitle() {
-		return title;
+	public Reference(Map<String, String> input) {
+		fields.putAll(input);
 	}
-	
+
+	public String get(String key) {
+		String val = fields.get(key);
+		return val != null ? val : "";
+	}
+
+	public Reference set(String key, String value) {
+		fields.put(key.toLowerCase(), value);
+		return this;
+	}
+
 	public String getAuthor() {
-		return author;
+		return get("author");
 	}
-	
-	public int getYear() {
-		return year;
+
+	public String getTitle() {
+		return get("title");
 	}
-        
-        public void setTitle(String title) {
-            this.title = title;
-        }
-        
-        public void setAuthor(String author) {
-            this.author = author;
-        }
-        
-        public void setYear(int year) {
-            this.year = year;
-        }
-	
-	@Override
-	public String toString() {
-		return "";
+
+	public String getYear() {
+		return .get("year");
 	}
-        
-        public void save() {
-            DAO dao = new DAO();
-            dao.addReference(this);
-        }
 }
