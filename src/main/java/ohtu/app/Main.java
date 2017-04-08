@@ -20,6 +20,7 @@ import ohtu.views.MainViewImpl;
 
 @SuppressWarnings("serial")
 @Theme("mytheme")
+@PreserveOnRefresh
 public class Main extends UI {
 
 	@Override
