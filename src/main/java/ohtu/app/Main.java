@@ -11,8 +11,12 @@ import com.vaadin.ui.UI;
 
 import ohtu.data.FakeDatabase;
 import ohtu.data.ReferenceDAO;
+import ohtu.views.AddPresenter;
+import ohtu.views.AddView;
 import ohtu.views.AddViewImpl;
+import ohtu.views.MainPresenter;
 import ohtu.views.MainView;
+import ohtu.views.MainViewImpl;
 
 @SuppressWarnings("serial")
 @Theme("mytheme")
@@ -20,14 +24,19 @@ public class Main extends UI {
 
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
-
+		getPage().setTitle("Main page - Title");
+		
 		ReferenceDAO dao = new ReferenceDAO(new FakeDatabase());
 
-		getPage().setTitle("Main page - Title");
-
+		MainView mainView = new MainViewImpl();
+		MainPresenter mainPresenter = new MainPresenter(mainView, dao);
+		
+		AddView addView = new AddViewImpl();
+		AddPresenter addPresenter = new AddPresenter(addView, dao);
+	
 		Navigator navigator = new Navigator(this, this);
-		navigator.addView("", new MainView());
-		navigator.addView("addRefs", new AddViewImpl(dao));
+		navigator.addView("", mainView);
+		navigator.addView("addRefs", addView);
 	}
 
 	@WebServlet(urlPatterns = "/*", asyncSupported = true)

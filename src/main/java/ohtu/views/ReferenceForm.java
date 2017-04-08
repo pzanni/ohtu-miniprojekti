@@ -1,5 +1,5 @@
 
-package ohtu.models;
+package ohtu.views;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,16 +12,15 @@ import com.vaadin.ui.Notification;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 
-import ohtu.views.AddView;
+import ohtu.views.AddView.AddViewListener;
 
 @SuppressWarnings("serial")
 public class ReferenceForm extends VerticalLayout {
 
-	//"Number"("Pages");("Month");"note");"key");
 	private List<TextField> fields;
-	private List<String> fieldNames = Arrays.asList("Title", "Author", "Journal", "Year", "Volume");
+	private List<String> fieldNames = Arrays.asList("Key", "Title", "Author", "Journal", "Year", "Volume");
 	private Button send = new Button("Add", e -> saveReference());
-	private AddView.AddViewListener listener;
+	private AddViewListener listener;
 
 	public ReferenceForm() {
 		fields = new ArrayList<>();
@@ -33,8 +32,6 @@ public class ReferenceForm extends VerticalLayout {
 	private void saveReference() {
 		if (listener == null) return;
 		
-		Notification.show("Talletettu referenssi");
-		
 		Map<String, String> input = new HashMap<>();
 		
 		fields.forEach(f -> {
@@ -44,8 +41,11 @@ public class ReferenceForm extends VerticalLayout {
 		listener.saveReference(input);
 	}
 	
-	public void setListener(AddView.AddViewListener listener) {
+	public void setListener(AddViewListener listener) {
 		this.listener = listener;
 	}
-
+	
+	public void empty() {
+		fields.forEach(f -> f.clear());
+	}
 }
