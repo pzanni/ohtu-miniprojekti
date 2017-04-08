@@ -51,7 +51,5 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-		Notification.show("UPDATED");
-		listener.updateLists();
 	}
 }
