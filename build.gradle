@@ -4,16 +4,15 @@ plugins {
 }
 
 apply plugin: 'eclipse'
+apply plugin: 'jacoco'
 
-group = 'com.ohtu'
+group = 'ohtu'
 version = '1.0-SNAPSHOT'
 
 description = """ohtu-miniprojekti"""
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-
-apply plugin: 'jacoco'
 
 jacocoTestReport {
     reports {
@@ -37,3 +36,5 @@ test {
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()
 }
+
+vaadinRun.classesDir = 'build/classes'

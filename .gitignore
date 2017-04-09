@@ -1,8 +1,9 @@
-.settings
+/.settings/
 .classpath
 .project
-target/
+/target/
 /.gradle/
 /bin/
 /build/
 /.nb-gradle/
+/src/main/webapp/
