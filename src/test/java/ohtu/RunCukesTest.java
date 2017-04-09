@@ -1,4 +1,4 @@
-package com.ohtu;
+package ohtu;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
