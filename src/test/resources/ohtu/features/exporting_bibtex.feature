@@ -1,0 +1,1 @@
+Feature: As a user I want to export references in BibTeX format
