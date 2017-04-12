@@ -10,6 +10,7 @@ import java.util.Map;
 import org.junit.Before;
 import org.junit.Test;
 
+import ohtu.models.Reference;
 import ohtu.models.validators.ReferenceValidator;
 
 public class ReferenceTest {
