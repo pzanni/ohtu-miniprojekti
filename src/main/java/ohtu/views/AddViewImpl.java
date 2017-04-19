@@ -19,6 +19,7 @@ public class AddViewImpl extends VerticalLayout implements AddView {
 		previousButton = new Button("Go Back", e -> UI.getCurrent().getNavigator().navigateTo(""));
 		previousButton.setStyleName(ValoTheme.BUTTON_PRIMARY);
 		previousButton.setHeightUndefined();
+		previousButton.setId("previousButton");
 		form = new ReferenceForm();
 		
 		addComponents(previousButton, form);
