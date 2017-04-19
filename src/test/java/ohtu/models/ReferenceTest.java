@@ -3,6 +3,7 @@ package ohtu.models;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,7 +19,7 @@ public class ReferenceTest {
 	@Before
 	public void initialize() {
 		ref = new Reference().set("type", "book").set("title", "Veljeni Leijonamieli").set("author", "Astrid Lindgren")
-				.set("year", "1973");
+				.set("year", "1973").set("key", "SWEBOK");
 	}
 
 	@Test
@@ -64,5 +65,10 @@ public class ReferenceTest {
 		assertEquals(ref.get("title"), "title");
 		ref.set("TITLE", "second");
 		assertEquals(ref.get("title"), "second");
+	}
+	
+	@Test
+	public void bibtexGenerationWorks() {
+		assertTrue(ref.toBibTex().startsWith("@book{SWEBOK,"));
 	}
 }
