@@ -6,6 +6,16 @@ plugins {
 apply plugin: 'eclipse'
 apply plugin: 'jacoco'
 
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
+task copyToLib(type: Copy) {
+    into "$buildDir/lib"
+    from(configurations.compile)
+}
+
+stage.dependsOn(copyToLib)
+
 group = 'ohtu'
 version = '1.0-SNAPSHOT'
 
