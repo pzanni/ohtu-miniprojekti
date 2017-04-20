@@ -4,6 +4,6 @@
 /target/
 /.gradle/
 /bin/
-
+/build/
 /.nb-gradle/
 /src/main/webapp/

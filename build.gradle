@@ -63,4 +63,13 @@ test {
     systemProperties System.getProperties()
 }
 
+jar {
+    manifest {
+        attributes (
+		'Class-Path': '/build/classes/',
+		'Main-Class': 'ohtu.app.Main'
+	)
+    }
+}
+
 
