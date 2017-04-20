@@ -53,9 +53,11 @@ dependencies {
     testCompile 'com.vaadin:vaadin-themes:8.0.5'
 
     compile 'org.eclipse.jetty:jetty-server:9.4.3.v20170317'
+    compile 'org.eclipse.jetty:jetty-webapp:9.4.3.v20170317'
     compile 'org.eclipse.jetty:jetty-servlet:9.4.3.v20170317'
     compile 'com.vaadin:vaadin-server:8.0.5'
     compile 'com.vaadin:vaadin-themes:8.0.5'
+    compile group: 'com.vaadin', name: 'vaadin-client-compiled', version: '8.0.5'
 }
 
 test {
@@ -67,7 +69,7 @@ jar {
     manifest {
         attributes (
 		'Class-Path': '/build/classes/',
-		'Main-Class': 'ohtu.app.Main'
+		'Main-Class': 'ohtu.app.NewMain'
 	)
     }
 }
