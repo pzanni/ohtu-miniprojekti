@@ -51,9 +51,10 @@ public class MainViewTest {
 		} catch (NoSuchElementException e) {
 			fail("No such element");
 		}
-		
+
 		try {
 			Thread.sleep(1000);
-		} catch (InterruptedException e) {}
+		} catch (InterruptedException e) {
+		}
 	}
 }
