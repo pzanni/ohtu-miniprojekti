@@ -20,7 +20,6 @@ import ohtu.views.MainView;
 import ohtu.views.MainViewImpl;
 
 @SuppressWarnings("serial")
-@Theme("mytheme")
 @PreserveOnRefresh
 public class Main extends UI {
 
@@ -31,10 +30,10 @@ public class Main extends UI {
 		ReferenceDAO dao = new ReferenceDAO(new FakeDatabase());
 
 		MainView mainView = new MainViewImpl();
-		MainPresenter mainPresenter = new MainPresenter(mainView, dao);
+		new MainPresenter(mainView, dao);
 		
 		AddView addView = new AddViewImpl();
-		AddPresenter addPresenter = new AddPresenter(addView, dao);
+		new AddPresenter(addView, dao);
 	
 		Navigator navigator = new Navigator(this, this);
 		navigator.addView("", mainView);
