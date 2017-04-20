@@ -22,6 +22,7 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 
 	public MainViewImpl() {
 		addButton = new Button("Add references", event -> UI.getCurrent().getNavigator().navigateTo("addRefs"));
+
 		grid = new Grid<>();
 
 		layout = new HorizontalLayout(grid, addButton);
