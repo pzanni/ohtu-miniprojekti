@@ -5,9 +5,8 @@ plugins {
 
 apply plugin: 'eclipse'
 apply plugin: 'jacoco'
-apply plugin: 'jetty'
 
-task stage(dependsOn: ['build', 'clean', 'jar'])
+task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
 
 task copyToLib(type: Copy) {
@@ -53,10 +52,6 @@ dependencies {
     testCompile 'com.vaadin:vaadin-server:8.0.5'
     testCompile 'com.vaadin:vaadin-themes:8.0.5'
 
-    compile 'org.eclipse.jetty:jetty-server:9.4.4.v20170414'
-    compile 'org.eclipse.jetty:jetty-servlet:9.4.4.v20170414'
-    compile 'com.vaadin:vaadin-server:8.0.5'
-    compile 'com.vaadin:vaadin-themes:8.0.5'
     compile group: 'com.vaadin', name: 'vaadin-client-compiled', version: '8.0.5'
     compile group: 'com.github.jsimone', name: 'webapp-runner', version: '8.5.11.3'
 
