@@ -7,7 +7,8 @@ before_install:
  - sudo apt-get -qq update
  - sudo apt-get install -y libstdc++6
  - sudo updatedb
- - locate libstdc++.so.6
+ - locate libstdc++.so.6 
+ - sudo ln -sf /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
 
  
 after_success:
