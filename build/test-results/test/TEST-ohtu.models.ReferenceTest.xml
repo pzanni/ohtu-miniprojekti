@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ohtu.models.ReferenceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:58:42" hostname="DESKTOP-DAIUKD2" time="0.009">
+<testsuite name="ohtu.models.ReferenceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:40:54" hostname="DESKTOP-DAIUKD2" time="0.014">
   <properties/>
-  <testcase name="bookValidatesCorrectly" classname="ohtu.models.ReferenceTest" time="0.006"/>
+  <testcase name="bookValidatesCorrectly" classname="ohtu.models.ReferenceTest" time="0.009"/>
   <testcase name="constructorInitializesPropertiesCorrectly" classname="ohtu.models.ReferenceTest" time="0.0"/>
-  <testcase name="constructorInitializesPropertiesFromMap" classname="ohtu.models.ReferenceTest" time="0.001"/>
+  <testcase name="constructorInitializesPropertiesFromMap" classname="ohtu.models.ReferenceTest" time="0.002"/>
   <testcase name="bibtexGenerationWorks" classname="ohtu.models.ReferenceTest" time="0.001"/>
-  <testcase name="settersAreCaseInsensite" classname="ohtu.models.ReferenceTest" time="0.0"/>
+  <testcase name="settersAreCaseInsensite" classname="ohtu.models.ReferenceTest" time="0.001"/>
   <testcase name="addingValidatorsWorks" classname="ohtu.models.ReferenceTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.war
+web: java -jar build/lib/webapp-runner-8.5.11.3.jar build/libs/*.war

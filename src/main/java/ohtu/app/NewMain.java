@@ -4,11 +4,9 @@
  * and open the template in the editor.
  */
 package ohtu.app;
-import ohtu.app.Main;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.eclipse.jetty.webapp.WebAppContext;
 /**
  *
  * @author pullis
