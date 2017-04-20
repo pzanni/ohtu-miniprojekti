@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Class-Path: file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/f
+ i.jasoft.plugin/gradle-vaadin-plugin/1.1.9/3834f8cce31f138a29fb069fa7
+ 7f6c65269350a3/gradle-vaadin-plugin-1.1.9.jar file:/C:/Users/pullis/.
+ gradle/caches/modules-2/files-2.1/fish.payara.extras/payara-embedded-
+ web/4.1.1.164/aadc9b1b96531d96416865d8f7ffb3daf209791/payara-embedded
+ -web-4.1.1.164.jar file:/C:/Users/pullis/.gradle/caches/modules-2/fil
+ es-2.1/org.eclipse.jetty/jetty-server/9.4.3.v20170317/216e823b42e86e7
+ 8098e22c99aa49d557c61ca8e/jetty-server-9.4.3.v20170317.jar file:/C:/U
+ sers/pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jett
+ y-servlet/9.4.3.v20170317/3c564240ae2c3ec3a66c009884f5801f53be69c5/je
+ tty-servlet-9.4.3.v20170317.jar file:/C:/Users/pullis/.gradle/caches/
+ modules-2/files-2.1/com.vaadin/vaadin-server/8.0.5/d34b0f133cf5405a9b
+ 22bc2c4928427aed613893/vaadin-server-8.0.5.jar file:/C:/Users/pullis/
+ .gradle/caches/modules-2/files-2.1/com.vaadin/vaadin-themes/8.0.5/2b2
+ cdc03fc5e9ceedc26cf7f1f53f5f39bbd8003/vaadin-themes-8.0.5.jar file:/C
+ :/Users/pullis/.gradle/caches/modules-2/files-2.1/javax.servlet/javax
+ .servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.ser
+ vlet-api-3.1.0.jar file:/C:/Users/pullis/.gradle/caches/modules-2/fil
+ es-2.1/org.eclipse.jetty/jetty-http/9.4.3.v20170317/8f73fbfaabb3a3b2d
+ 5b3a2ddad15c19c7f00a876/jetty-http-9.4.3.v20170317.jar file:/C:/Users
+ /pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io
+ /9.4.3.v20170317/c2b20cfd32d74e74c030c0b77fa64d01434f2e3/jetty-io-9.4
+ .3.v20170317.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files
+ -2.1/org.eclipse.jetty/jetty-security/9.4.3.v20170317/d7de81b385a054e
+ 65bada7282878a6178b25217e/jetty-security-9.4.3.v20170317.jar file:/C:
+ /Users/pullis/.gradle/caches/modules-2/files-2.1/com.vaadin/vaadin-sa
+ ss-compiler/0.9.13/663088831773c35e033ea1538b96d817ce7cef52/vaadin-sa
+ ss-compiler-0.9.13.jar file:/C:/Users/pullis/.gradle/caches/modules-2
+ /files-2.1/com.vaadin/vaadin-shared/8.0.5/aa77b5fc463eea1e062ccd4786d
+ 1ad0b4638c6e0/vaadin-shared-8.0.5.jar file:/C:/Users/pullis/.gradle/c
+ aches/modules-2/files-2.1/org.jsoup/jsoup/1.8.3/65fd012581ded67bc2094
+ 5d85c32b4598c3a9cf1/jsoup-1.8.3.jar file:/C:/Users/pullis/.gradle/cac
+ hes/modules-2/files-2.1/com.googlecode.gentyref/gentyref/1.2.0/8d776d
+ 0a52d707fa29c7449ddd4d102ac7002d6c/gentyref-1.2.0.jar file:/C:/Users/
+ pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-uti
+ l/9.4.3.v20170317/1d3299563053e2290338e22db693a8d442e7fb25/jetty-util
+ -9.4.3.v20170317.jar file:/C:/Users/pullis/.gradle/caches/modules-2/f
+ iles-2.1/org.w3c.css/sac/1.3/cdb2dcb4e22b83d6b32b93095f644c3462739e82
+ /sac-1.3.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1
+ /com.vaadin.external.flute/flute/1.3.0.gg2/48e8c3a235544a0506ca308151
+ 9ce114169242a/flute-1.3.0.gg2.jar file:/C:/Users/pullis/.gradle/cache
+ s/modules-2/files-2.1/com.vaadin/vaadin-client-compiled/8.0.5/7c51817
+ 2aea860f978435331b618ac554ad3ca9e/vaadin-client-compiled-8.0.5.jar
+
