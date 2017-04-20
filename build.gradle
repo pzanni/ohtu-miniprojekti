@@ -6,7 +6,7 @@ plugins {
 apply plugin: 'eclipse'
 apply plugin: 'jacoco'
 
-task stage(dependsOn: ['build', 'clean'])
+task stage(dependsOn: ['build', 'clean', 'jar'])
 build.mustRunAfter clean
 
 task copyToLib(type: Copy) {
