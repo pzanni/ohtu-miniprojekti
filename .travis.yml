@@ -8,7 +8,7 @@ before_install:
  - sudo apt-get install -y libstdc++6
  - sudo updatedb
  - locate libstdc++.so.6 
- - sudo ln -sf /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+ - sudo ln -sf /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16 /home/travis/.m2/repository/webdriver/chromedriver/linux64/2.29/chromedriver/libstdc++.so.6
 
  
 after_success:
