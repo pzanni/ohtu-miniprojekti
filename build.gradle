@@ -55,6 +55,7 @@ dependencies {
     compile 'org.eclipse.jetty:jetty-server:9.4.4.v20170414'
     compile 'org.eclipse.jetty:jetty-webapp:9.4.4.v20170414'
     compile 'org.eclipse.jetty:jetty-servlet:9.4.4.v20170414'
+    compile 'org.eclipse.jetty:jetty-runner:9.4.4.v20170414'
     compile 'com.vaadin:vaadin-server:8.0.5'
     compile 'com.vaadin:vaadin-themes:8.0.5'
     compile group: 'com.vaadin', name: 'vaadin-client-compiled', version: '8.0.5'

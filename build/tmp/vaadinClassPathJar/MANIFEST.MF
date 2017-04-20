@@ -12,40 +12,97 @@ Class-Path: file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/f
  ty-webapp-9.4.4.v20170414.jar file:/C:/Users/pullis/.gradle/caches/mo
  dules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.4.v20170414/89e
  a5480d499a95eff0fc10d82244e740e673bd/jetty-servlet-9.4.4.v20170414.ja
- r file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/com.vaadin
- /vaadin-server/8.0.5/d34b0f133cf5405a9b22bc2c4928427aed613893/vaadin-
- server-8.0.5.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files
- -2.1/com.vaadin/vaadin-themes/8.0.5/2b2cdc03fc5e9ceedc26cf7f1f53f5f39
- bbd8003/vaadin-themes-8.0.5.jar file:/C:/Users/pullis/.gradle/caches/
- modules-2/files-2.1/com.vaadin/vaadin-client-compiled/8.0.5/7c518172a
- ea860f978435331b618ac554ad3ca9e/vaadin-client-compiled-8.0.5.jar file
- :/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/javax.servlet/ja
- vax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.
- servlet-api-3.1.0.jar file:/C:/Users/pullis/.gradle/caches/modules-2/
- files-2.1/org.eclipse.jetty/jetty-http/9.4.4.v20170414/a2726de9b40506
- a9d9a346379785f9c2ce1f7a3e/jetty-http-9.4.4.v20170414.jar file:/C:/Us
- ers/pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty
- -io/9.4.4.v20170414/4a1da5a31fbfcdf01e0e4b00a6c5aea96d45801f/jetty-io
- -9.4.4.v20170414.jar file:/C:/Users/pullis/.gradle/caches/modules-2/f
- iles-2.1/org.eclipse.jetty/jetty-xml/9.4.4.v20170414/cec1ca094de1194e
- d022c2098f5d98640917806c/jetty-xml-9.4.4.v20170414.jar file:/C:/Users
- /pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-se
- curity/9.4.4.v20170414/df8cc123fb574607f9c5af471ac1b20d82769563/jetty
- -security-9.4.4.v20170414.jar file:/C:/Users/pullis/.gradle/caches/mo
- dules-2/files-2.1/com.vaadin/vaadin-sass-compiler/0.9.13/663088831773
- c35e033ea1538b96d817ce7cef52/vaadin-sass-compiler-0.9.13.jar file:/C:
- /Users/pullis/.gradle/caches/modules-2/files-2.1/com.vaadin/vaadin-sh
- ared/8.0.5/aa77b5fc463eea1e062ccd4786d1ad0b4638c6e0/vaadin-shared-8.0
- .5.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.j
- soup/jsoup/1.8.3/65fd012581ded67bc20945d85c32b4598c3a9cf1/jsoup-1.8.3
- .jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/com.goo
- glecode.gentyref/gentyref/1.2.0/8d776d0a52d707fa29c7449ddd4d102ac7002
- d6c/gentyref-1.2.0.jar file:/C:/Users/pullis/.gradle/caches/modules-2
- /files-2.1/org.eclipse.jetty/jetty-util/9.4.4.v20170414/7104b56567b0a
- 83eb0554054cd1c90d78f5282cc/jetty-util-9.4.4.v20170414.jar file:/C:/U
- sers/pullis/.gradle/caches/modules-2/files-2.1/org.w3c.css/sac/1.3/cd
- b2dcb4e22b83d6b32b93095f644c3462739e82/sac-1.3.jar file:/C:/Users/pul
- lis/.gradle/caches/modules-2/files-2.1/com.vaadin.external.flute/flut
- e/1.3.0.gg2/48e8c3a235544a0506ca3081519ce114169242a/flute-1.3.0.gg2.j
- ar
+ r file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.eclips
+ e.jetty/jetty-runner/9.4.4.v20170414/60f68fa8814527dde5a47693c77fbdd0
+ cecb3334/jetty-runner-9.4.4.v20170414.jar file:/C:/Users/pullis/.grad
+ le/caches/modules-2/files-2.1/com.vaadin/vaadin-server/8.0.5/d34b0f13
+ 3cf5405a9b22bc2c4928427aed613893/vaadin-server-8.0.5.jar file:/C:/Use
+ rs/pullis/.gradle/caches/modules-2/files-2.1/com.vaadin/vaadin-themes
+ /8.0.5/2b2cdc03fc5e9ceedc26cf7f1f53f5f39bbd8003/vaadin-themes-8.0.5.j
+ ar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/com.vaadi
+ n/vaadin-client-compiled/8.0.5/7c518172aea860f978435331b618ac554ad3ca
+ 9e/vaadin-client-compiled-8.0.5.jar file:/C:/Users/pullis/.gradle/cac
+ hes/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d0
+ 75497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar file:/C
+ :/Users/pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/j
+ etty-http/9.4.4.v20170414/a2726de9b40506a9d9a346379785f9c2ce1f7a3e/je
+ tty-http-9.4.4.v20170414.jar file:/C:/Users/pullis/.gradle/caches/mod
+ ules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.4.v20170414/4a1da5a31
+ fbfcdf01e0e4b00a6c5aea96d45801f/jetty-io-9.4.4.v20170414.jar file:/C:
+ /Users/pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/je
+ tty-xml/9.4.4.v20170414/cec1ca094de1194ed022c2098f5d98640917806c/jett
+ y-xml-9.4.4.v20170414.jar file:/C:/Users/pullis/.gradle/caches/module
+ s-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.4.v20170414/df8cc1
+ 23fb574607f9c5af471ac1b20d82769563/jetty-security-9.4.4.v20170414.jar
+  file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.eclipse
+ .jetty/jetty-plus/9.4.4.v20170414/abf3358774f53ff0f786a5699966f29235b
+ 94a90/jetty-plus-9.4.4.v20170414.jar file:/C:/Users/pullis/.gradle/ca
+ ches/modules-2/files-2.1/org.eclipse.jetty/jetty-annotations/9.4.4.v2
+ 0170414/2d4a498a64093f29f4267a0f30a0c26d7ce96e0a/jetty-annotations-9.
+ 4.4.v20170414.jar file:/C:/Users/pullis/.gradle/caches/modules-2/file
+ s-2.1/org.eclipse.jetty/jetty-jaas/9.4.4.v20170414/d8e9f870e97dbc916a
+ 3fc9a4d28e3cdc22b743ec/jetty-jaas-9.4.4.v20170414.jar file:/C:/Users/
+ pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket
+ /websocket-server/9.4.4.v20170414/7f454a57892d32f758267a04fe0d60af86e
+ 1676e/websocket-server-9.4.4.v20170414.jar file:/C:/Users/pullis/.gra
+ dle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-jndi/9.4.4.v20
+ 170414/fc94069f920018b65db872eb575c25bdd102ce54/jetty-jndi-9.4.4.v201
+ 70414.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/or
+ g.eclipse.jetty/apache-jsp/9.4.4.v20170414/426dc05586f78b314510f66e96
+ ba260a03d10c4f/apache-jsp-9.4.4.v20170414.jar file:/C:/Users/pullis/.
+ gradle/caches/modules-2/files-2.1/org.eclipse.jetty/apache-jstl/9.4.4
+ .v20170414/8e852972492e3e92f64a12f7177180c219e0e51/apache-jstl-9.4.4.
+ v20170414.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.
+ 1/com.vaadin/vaadin-sass-compiler/0.9.13/663088831773c35e033ea1538b96
+ d817ce7cef52/vaadin-sass-compiler-0.9.13.jar file:/C:/Users/pullis/.g
+ radle/caches/modules-2/files-2.1/com.vaadin/vaadin-shared/8.0.5/aa77b
+ 5fc463eea1e062ccd4786d1ad0b4638c6e0/vaadin-shared-8.0.5.jar file:/C:/
+ Users/pullis/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.8.3
+ /65fd012581ded67bc20945d85c32b4598c3a9cf1/jsoup-1.8.3.jar file:/C:/Us
+ ers/pullis/.gradle/caches/modules-2/files-2.1/com.googlecode.gentyref
+ /gentyref/1.2.0/8d776d0a52d707fa29c7449ddd4d102ac7002d6c/gentyref-1.2
+ .0.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.e
+ clipse.jetty/jetty-util/9.4.4.v20170414/7104b56567b0a83eb0554054cd1c9
+ 0d78f5282cc/jetty-util-9.4.4.v20170414.jar file:/C:/Users/pullis/.gra
+ dle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/
+ 1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2
+ .jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.ow2
+ .asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar fil
+ e:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm
+ -commons/5.1/25d8a575034dd9cfcb375a39b5334f0ba9c8474e/asm-commons-5.1
+ .jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.ecl
+ ipse.jetty.websocket/websocket-common/9.4.4.v20170414/25ba998831e8db6
+ aae2a712217af19effb43d83d/websocket-common-9.4.4.v20170414.jar file:/
+ C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.
+ websocket/websocket-client/9.4.4.v20170414/efbdd5c98492f4e4e245d9837b
+ b8f9260830c8f7/websocket-client-9.4.4.v20170414.jar file:/C:/Users/pu
+ llis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/w
+ ebsocket-servlet/9.4.4.v20170414/d171094c8f0139b18d97812677c3e203dcb3
+ 3e59/websocket-servlet-9.4.4.v20170414.jar file:/C:/Users/pullis/.gra
+ dle/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain/jetty-sche
+ mas/3.1/98bb827bdf254fd353bab0c53324c0848076b42c/jetty-schemas-3.1.ja
+ r file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.mortba
+ y.jasper/apache-jsp/8.5.9.1/331cedca956a09e9c3284d8ea080f8fe71657099/
+ apache-jsp-8.5.9.1.jar file:/C:/Users/pullis/.gradle/caches/modules-2
+ /files-2.1/org.eclipse.jdt.core.compiler/ecj/4.4.2/71d67f5bab9465ec84
+ 4596ef844f40902ae25392/ecj-4.4.2.jar file:/C:/Users/pullis/.gradle/ca
+ ches/modules-2/files-2.1/org.apache.taglibs/taglibs-standard-spec/1.2
+ .5/c3bb98c30f75fef1e229d1d03cf8457de22f1ba0/taglibs-standard-spec-1.2
+ .5.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.a
+ pache.taglibs/taglibs-standard-impl/1.2.5/9b9783ccb2a323383e6e20e36d3
+ 68f8997b71967/taglibs-standard-impl-1.2.5.jar file:/C:/Users/pullis/.
+ gradle/caches/modules-2/files-2.1/org.w3c.css/sac/1.3/cdb2dcb4e22b83d
+ 6b32b93095f644c3462739e82/sac-1.3.jar file:/C:/Users/pullis/.gradle/c
+ aches/modules-2/files-2.1/com.vaadin.external.flute/flute/1.3.0.gg2/4
+ 8e8c3a235544a0506ca3081519ce114169242a/flute-1.3.0.gg2.jar file:/C:/U
+ sers/pullis/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5
+ .1/87b38c12a0ea645791ead9d3e74ae5268d1d6c34/asm-tree-5.1.jar file:/C:
+ /Users/pullis/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.we
+ bsocket/websocket-api/9.4.4.v20170414/83ac5e5ccb73da1c1839805e4d7f284
+ 422b7535f/websocket-api-9.4.4.v20170414.jar file:/C:/Users/pullis/.gr
+ adle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.4.
+ v20170414/6b3d9dcfa375ee4f4fe6c8bf27ccc403c76b4ae/jetty-client-9.4.4.
+ v20170414.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.
+ 1/org.mortbay.jasper/apache-el/8.5.9.1/6ca0976b16fe81da64f2b44473dcfe
+ 30a92b3e92/apache-el-8.5.9.1.jar
 

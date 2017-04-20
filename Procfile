@@ -1,1 +1,1 @@
-web: java -jar build/libs/ohtu-miniprojekti-1.0-SNAPSHOT.jar
+web:    java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.war
