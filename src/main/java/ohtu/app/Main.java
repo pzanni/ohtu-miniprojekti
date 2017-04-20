@@ -10,6 +10,10 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.UI;
 
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.servlet.ServletHolder;
+
 import ohtu.data.FakeDatabase;
 import ohtu.data.ReferenceDAO;
 import ohtu.views.AddPresenter;
@@ -23,8 +27,22 @@ import ohtu.views.MainViewImpl;
 @PreserveOnRefresh
 public class Main extends UI {
 
+        private Server server;
+    
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
+            
+                server = new Server(8080);
+		ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+		context.setContextPath("/");
+		server.setHandler(context);
+		
+		context.addServlet(new ServletHolder(new MyUIServlet()), "/*");
+		
+		try {
+			server.start();
+		} catch (Exception e) {}
+            
 		getPage().setTitle("Main page - Title");
 		
 		ReferenceDAO dao = new ReferenceDAO(new FakeDatabase());

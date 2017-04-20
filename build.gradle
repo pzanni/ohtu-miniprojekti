@@ -41,6 +41,11 @@ dependencies {
     testCompile 'org.eclipse.jetty:jetty-servlet:9.4.3.v20170317'
     testCompile 'com.vaadin:vaadin-server:8.0.5'
     testCompile 'com.vaadin:vaadin-themes:8.0.5'
+
+    compile 'org.eclipse.jetty:jetty-server:9.4.3.v20170317'
+    compile 'org.eclipse.jetty:jetty-servlet:9.4.3.v20170317'
+    compile 'com.vaadin:vaadin-server:8.0.5'
+    compile 'com.vaadin:vaadin-themes:8.0.5'
 }
 
 test {
@@ -48,4 +53,4 @@ test {
     systemProperties System.getProperties()
 }
 
-vaadinRun.classesDir = '/build/classes/'
+
