@@ -4,6 +4,9 @@ sudo: required
 
 before_install:
  - chmod +x gradlew
-
+ - apt-get -qq update
+ - apt-get install -y libstdc++6
+ - ./gradlew vaadinCreateTheme --name valo
+ 
 after_success:
 - ./gradlew jacocoTestReport coveralls
