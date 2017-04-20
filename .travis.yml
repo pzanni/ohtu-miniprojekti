@@ -1,9 +1,8 @@
 language: java
+sudo: required
 
 addons:
-    firefox: "53.0"
-	
-sudo: required
+    firefox: latest
 
 before_script:
   - "export DISPLAY=:99.0"
@@ -14,4 +13,4 @@ before_install:
  - chmod +x gradlew
  
 after_success:
-- ./gradlew jacocoTestReport coveralls
+ - ./gradlew jacocoTestReport coveralls
