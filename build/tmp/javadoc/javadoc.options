@@ -5,7 +5,6 @@
 -sourcepath ''
 -windowtitle 'ohtu-miniprojekti 1.0-SNAPSHOT API'
 'C:\\Users\\pullis\\Desktop\\git\\ohtu-miniprojekti\\src\\main\\java\\ohtu\\app\\Main.java'
-'C:\\Users\\pullis\\Desktop\\git\\ohtu-miniprojekti\\src\\main\\java\\ohtu\\app\\NewMain.java'
 'C:\\Users\\pullis\\Desktop\\git\\ohtu-miniprojekti\\src\\main\\java\\ohtu\\data\\FakeDatabase.java'
 'C:\\Users\\pullis\\Desktop\\git\\ohtu-miniprojekti\\src\\main\\java\\ohtu\\data\\ReferenceDAO.java'
 'C:\\Users\\pullis\\Desktop\\git\\ohtu-miniprojekti\\src\\main\\java\\ohtu\\models\\Reference.java'
