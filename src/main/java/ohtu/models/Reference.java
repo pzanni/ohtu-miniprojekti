@@ -64,4 +64,15 @@ public class Reference {
 	public boolean isValid() {
 		return validators.stream().allMatch(v -> v.isValid(this));
 	}
+	
+	public String toBibTex() {
+		StringBuilder sb = new StringBuilder("@" + getType() + "{" + getKey() + ",\n");
+		
+		fields.forEach((k, v) -> {
+			if (!k.equals("type") && !k.equals("key"))
+				sb.append("\t" + k + "=" + "{" + v + "},\n");
+		});
+		
+		return sb.append("}").toString();
+	}
 }

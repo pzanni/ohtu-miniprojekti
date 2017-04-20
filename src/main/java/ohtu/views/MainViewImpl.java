@@ -6,7 +6,6 @@ import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Grid;
 import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -22,6 +21,8 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 
 	public MainViewImpl() {
 		addButton = new Button("Add references", event -> UI.getCurrent().getNavigator().navigateTo("addRefs"));
+		addButton.setId("addButton");
+		
 		grid = new Grid<>();
 
 		layout = new HorizontalLayout(grid, addButton);
@@ -51,5 +52,6 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 
 	@Override
 	public void enter(ViewChangeEvent event) {
+		listener.updateLists();
 	}
 }
