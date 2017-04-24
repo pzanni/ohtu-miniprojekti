@@ -3,11 +3,18 @@ package ohtu.views;
 import java.util.List;
 
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
+import com.vaadin.server.FileDownloader;
+import com.vaadin.server.StreamResource;
+import com.vaadin.server.StreamResource.StreamSource;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Grid;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 import ohtu.models.Reference;
 
@@ -15,6 +22,7 @@ import ohtu.models.Reference;
 public class MainViewImpl extends VerticalLayout implements MainView {
 
 	private Button addButton;
+        private ExportButton exportButton;
 	private HorizontalLayout layout;
 	private Grid<Reference> grid;
 	private MainViewListener listener;
@@ -22,10 +30,10 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 	public MainViewImpl() {
 		addButton = new Button("Add references", event -> UI.getCurrent().getNavigator().navigateTo("addRefs"));
 		addButton.setId("addButton");
-		
+                exportButton = new ExportButton();		
 		grid = new Grid<>();
 
-		layout = new HorizontalLayout(grid, addButton);
+		layout = new HorizontalLayout(grid, addButton, exportButton);
 		layout.setSizeFull();
 		grid.setSizeFull();
 		layout.setExpandRatio(grid, 1);
@@ -42,6 +50,7 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 
 	public void setReferences(List<Reference> refs) {
 		grid.setItems(refs);
+                exportButton.setReferences(refs);
 	}
 
 	@Override

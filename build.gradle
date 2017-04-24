@@ -54,11 +54,9 @@ dependencies {
 
     compile group: 'com.vaadin', name: 'vaadin-client-compiled', version: '8.0.5'
     compile group: 'com.github.jsimone', name: 'webapp-runner', version: '8.5.11.3'
-
 }
 
 test {
 	testLogging.showStandardStreams = true
      systemProperties System.getProperties()
 }
-
