@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import ohtu.utilities.Encode;
 import ohtu.models.validators.CommonValidator;
 import ohtu.models.validators.ReferenceValidator;
 
@@ -70,7 +71,7 @@ public class Reference {
 		
 		fields.forEach((k, v) -> {
 			if (!k.equals("type") && !k.equals("key"))
-				sb.append("\t" + k + "=" + "{" + v + "},\n");
+				sb.append("\t" + k + "=" + "{" + Encode.toBibTex(v) + "},\n");
 		});
 		
 		return sb.append("}").toString();
