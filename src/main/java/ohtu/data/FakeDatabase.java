@@ -12,13 +12,13 @@ public class FakeDatabase {
 	public FakeDatabase() {
 		refs = new ArrayList<>();
 		refs.add(new Reference().set("TYPE", "Article").set("author", "Fox and Patterson")
-				.set("title", "Crossing the software education chasm").set("year", "2012").set("kEY", "fox"));
+						.set("title", "Crossing the software education chasm").set("year", "2012").set("kEY", "fox"));
 		refs.add(new Reference().set("TYPE", "Book").set("author", "Abram et al.")
-				.set("title", "Guide to the Software Engineering Body of Knownledge").set("year", "2004")
-				.set("kEY", "SWEBOK"));
+						.set("title", "Guide to the Software Engineering Body of Knownledge").set("year", "2004")
+						.set("kEY", "SWEBOK"));
 		refs.add(new Reference().set("TYPE", "InProceedings").set("author", "Royce")
-				.set("title", "Managing the Development of Large Software Systems").set("year", "1970")
-				.set("kEY", "royce70"));
+						.set("title", "Managing the Development of Large Software Systems").set("year", "1970")
+						.set("kEY", "royce70"));
 	}
 
 	public List<Reference> getAllRefs() {
