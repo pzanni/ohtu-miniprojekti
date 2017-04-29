@@ -5,6 +5,7 @@ plugins {
 
 apply plugin: 'eclipse'
 apply plugin: 'jacoco'
+apply plugin: 'checkstyle'
 
 group = 'ohtu'
 version = '1.0-SNAPSHOT'
@@ -19,6 +20,10 @@ jacocoTestReport {
         xml.enabled = true
         html.enabled = true
     }
+}
+
+checkstyle {
+    sourceSets = [ project.sourceSets.main ]
 }
 
 repositories {

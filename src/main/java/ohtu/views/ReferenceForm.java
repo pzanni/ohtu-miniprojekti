@@ -26,7 +26,7 @@ public class ReferenceForm extends VerticalLayout {
 		fields = new ArrayList<>();
 		fieldNames.forEach(s -> fields.add(new TextField(s)));
 		fields.forEach(f -> addComponent(f));
-                send.setId("addRef");
+        send.setId("addRef");
 		addComponent(send);
 	}
 
@@ -35,9 +35,7 @@ public class ReferenceForm extends VerticalLayout {
 		
 		Map<String, String> input = new HashMap<>();
 		
-		fields.forEach(f -> {
-			input.put(f.getCaption(), f.getValue());
-		});
+		fields.forEach(f -> input.put(f.getCaption(), f.getValue()));
 
 		listener.saveReference(input);
 	}
