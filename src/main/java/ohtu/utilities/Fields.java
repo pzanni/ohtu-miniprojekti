@@ -42,30 +42,18 @@ public class Fields {
     }
     
     public static String[] getAll (String key) {
-    
         String keyLowercase = key.toLowerCase();
-
-        if(required.containsKey(keyLowercase) && optional.containsKey(keyLowercase)) {
-        
-            String[] req = required.get(keyLowercase);
-            String[] opt = optional.get(keyLowercase);
-            String[] ret = new String[required.get(keyLowercase).length + optional.get(keyLowercase).length];
-            
-            int helper = 0;
-            
-            for(int i = 0; i < req.length; i++){
-                ret[helper] = req[i];
-                helper++;
-            }
-            
-            for(int i = 0; i < opt.length; i++){
-                ret[helper] = opt[i];
-                helper++;
-            }
-            
-            return ret;
+        String[] ret = new String[required.get(keyLowercase).length + optional.get(keyLowercase).length];
+        int helper = 0;
+        for(int i = 0; i < required.get(keyLowercase).length; i++){
+            ret[helper] = required.get(keyLowercase)[i];
+            helper++;
         }
-        return null;
+        for(int i = 0; i < optional.get(keyLowercase).length; i++){
+            ret[helper] = optional.get(keyLowercase)[i];
+            helper++;
+        }
+        return ret;
     }
     
     private void initRequired() {
@@ -75,6 +63,11 @@ public class Fields {
         required.put("conference",      new String[]{"author", "title", "booktitle", "year"});
         required.put("inbook",          new String[]{"author", "title", "pages", "publisher", "year"});
         required.put("incollection",    new String[]{"author", "title", "booktitle", "publisher", "year"});
+        initReqHelper();
+        
+    }
+    
+    private void initReqHelper() {
         required.put("inproceedings",   new String[]{"author", "title", "booktitle", "year"});
         required.put("manual",          new String[]{"title"});
         required.put("mastersthesis",   new String[]{"author", "title", "school", "year"});
@@ -86,13 +79,16 @@ public class Fields {
     }
     
     private void initOptional() {
-    
         optional.put("article",         new String[]{"number", "pages", "month", "note", "key"});
         optional.put("book",            new String[]{"number", "series", "address", "edition", "month", "note", "key"});
         optional.put("booklet",         new String[]{"author", "howpublished", "address", "month", "year", "note", "key"});
         optional.put("conference",      new String[]{"editor", "volume", "series", "pages", "address", "month", "organization", "publisher", "note", "key"});
         optional.put("inbook",          new String[]{"volume", "series", "type", "address", "edition", "month", "note", "key"});
         optional.put("incollection",    new String[]{"editor", "volume", "series", "type", "chapter", "pages", "address", "edition", "month", "note", "key"});
+        initOptHelper();
+    }
+    
+    private void initOptHelper() {
         optional.put("inproceedings",   new String[]{"editor", "volume", "series", "pages", "address", "month", "organization", "publisher", "note", "key"});
         optional.put("manual",          new String[]{"author", "organization", "address", "edition", "month", "year", "note", "key"});
         optional.put("mastersthesis",   new String[]{"type", "address", "month", "note", "key"});

@@ -25,30 +25,33 @@ import ohtu.views.MainViewImpl;
 @PreserveOnRefresh
 public class Main extends UI {
     
-	@Override
-	protected void init(VaadinRequest vaadinRequest) {
-            
-		getPage().setTitle("Main page - Title");
-                
-                //For initializing fields
-		Fields fields = new Fields();
-                
-		ReferenceDao dao = new ReferenceDAOImpl(new FakeDatabase());
+    Fields fields;
+    ReferenceDao dao;
+    MainView mainView;
+    AddView addView;
+    Navigator navigator;
 
-		MainView mainView = new MainViewImpl();
-		new MainPresenter(mainView, dao);
-		
-		AddView addView = new AddViewImpl();
-		new AddPresenter(addView, dao);
-	
-		Navigator navigator = new Navigator(this, this);
-		navigator.addView("", mainView);
-		navigator.addView("addRefs", addView);
-	}
+    @Override
+    protected void init(VaadinRequest vaadinRequest) {
+        getPage().setTitle("Main page - Title");
+        initValues();
+        new MainPresenter(mainView, dao);
+        new AddPresenter(addView, dao);
+        navigator.addView("", mainView);
+        navigator.addView("addRefs", addView);
+    }
 
-	@WebServlet(urlPatterns = "/*", asyncSupported = true)
-	@VaadinServletConfiguration(ui = Main.class, productionMode = false)
-	public static class MyUIServlet extends VaadinServlet {
-	}
+    private void initValues() {
+        fields = new Fields();
+        dao = new ReferenceDAOImpl(new FakeDatabase());
+        mainView = new MainViewImpl();
+        addView = new AddViewImpl();
+        navigator = new Navigator(this, this);
+    }
+
+    @WebServlet(urlPatterns = "/*", asyncSupported = true)
+    @VaadinServletConfiguration(ui = Main.class, productionMode = false)
+    public static class MyUIServlet extends VaadinServlet {
+    }
 
 }
