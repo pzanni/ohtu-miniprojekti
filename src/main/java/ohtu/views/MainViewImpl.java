@@ -22,18 +22,20 @@ import ohtu.models.Reference;
 public class MainViewImpl extends VerticalLayout implements MainView {
 
 	private Button addButton;
-        private ExportButton exportButton;
+    private ExportButton exportButton;
 	private VerticalLayout layout;
-        private HorizontalLayout buttonLayout;
+    private HorizontalLayout buttonLayout;
 	private Grid<Reference> grid;
 	private MainViewListener listener;
 
 	public MainViewImpl() {
 		addButton = new Button("Add references", event -> UI.getCurrent().getNavigator().navigateTo("addRefs"));
 		addButton.setId("addButton");
-                exportButton = new ExportButton();		
+
+    exportButton = new ExportButton();
+
 		grid = new Grid<>();
-                buttonLayout = new HorizontalLayout(addButton, exportButton);
+        buttonLayout = new HorizontalLayout(addButton, exportButton);
 		layout = new VerticalLayout(buttonLayout, grid);
 		layout.setSizeFull();
 		grid.setSizeFull();
@@ -51,7 +53,7 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 
 	public void setReferences(List<Reference> refs) {
 		grid.setItems(refs);
-                exportButton.setReferences(refs);
+        exportButton.setReferences(refs);
 	}
 
 	@Override
