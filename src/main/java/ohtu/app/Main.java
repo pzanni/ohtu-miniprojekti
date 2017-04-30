@@ -15,6 +15,7 @@ import ohtu.data.ReferenceDAOImpl;
 import ohtu.data.ReferenceDao;
 import ohtu.presenters.AddPresenter;
 import ohtu.presenters.MainPresenter;
+import ohtu.utilities.Fields;
 import ohtu.views.AddView;
 import ohtu.views.AddViewImpl;
 import ohtu.views.MainView;
@@ -28,7 +29,10 @@ public class Main extends UI {
 	protected void init(VaadinRequest vaadinRequest) {
             
 		getPage().setTitle("Main page - Title");
-		
+                
+                //For initializing fields
+		Fields fields = new Fields();
+                
 		ReferenceDao dao = new ReferenceDAOImpl(new FakeDatabase());
 
 		MainView mainView = new MainViewImpl();
