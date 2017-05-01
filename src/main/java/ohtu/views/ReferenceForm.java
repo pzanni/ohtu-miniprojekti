@@ -63,16 +63,6 @@ public class ReferenceForm extends VerticalLayout {
         addComponent(send); 
     }
 
-    public ReferenceForm() {
-        fields = new ArrayList<>();
-        type = "default";
-        fieldNames = Arrays.asList("Key", "Title", "Author", "Journal", "Year", "Volume");
-        fieldNames.forEach(s -> fields.add(new TextField(s)));
-        fields.forEach(f -> addComponent(f));
-        send.setId("addRef");
-        addComponent(send);
-    }
-
     private void saveReference() {
         if (listener == null) return;
 

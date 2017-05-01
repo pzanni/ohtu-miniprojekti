@@ -30,17 +30,14 @@ public class AddViewImpl extends VerticalLayout implements AddView {
         referenceTypes.setItems(refTypes());
         referenceTypes.setValue("article");
         form = new ReferenceForm("article");
-        referenceTypes.addValueChangeListener(event -> updateForm());
+        referenceTypes.addValueChangeListener(event -> { 
+                removeComponent(form);
+                form = new ReferenceForm(referenceTypes.getValue());
+                form.setListener(listener);
+                addComponent(form);
+            });
 
         addComponents(previousButton, referenceTypes, form);
-    }
-
-    private void updateForm() {
-
-        removeComponent(form);
-        form = new ReferenceForm(referenceTypes.getValue());
-        form.setListener(listener);
-        addComponent(form);
     }
 
     public void setListener(AddViewListener listener) {
