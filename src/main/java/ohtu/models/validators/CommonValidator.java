@@ -1,6 +1,7 @@
 package ohtu.models.validators;
 
 import ohtu.models.Reference;
+import ohtu.utilities.Fields;
 
 public class CommonValidator implements ReferenceValidator {
 
@@ -8,7 +9,7 @@ public class CommonValidator implements ReferenceValidator {
 	public boolean isValid(Reference reference) {
 		//reference contains required fields
 		
-		String[] required = {"author", "title", "year"};
+		String[] required = Fields.getRequired(reference.getType());
 		for (String field : required) {
 			if (reference.get(field).isEmpty())
 				return false;
