@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import ohtu.stubs.AddViewStub;
 import ohtu.stubs.ReferenceDaoStub;
+import ohtu.utilities.Fields;
 
 public class AddPresenterTest {
 	private AddPresenter presenter;
@@ -29,6 +30,7 @@ public class AddPresenterTest {
 	
 	@Before
 	public void init() {
+		new Fields();
 		stubView = new AddViewStub();
 		stubDao = new ReferenceDaoStub();
 		presenter = new AddPresenter(stubView, stubDao);
