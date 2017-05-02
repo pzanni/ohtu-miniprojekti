@@ -50,24 +50,28 @@ public class Stepdefs {
 
     @When("^valid reference information is entered$")
     public void enter_valid_information() throws Throwable {
-        WebElement element = driver.findElement(By.id("gwt-uid-5"));
-        element.sendKeys("otsikko");
-        element = driver.findElement(By.id("gwt-uid-7"));
-        element.sendKeys("anni puurunen");
-        element = driver.findElement(By.id("gwt-uid-11"));
-        element.sendKeys("1996");
-        element = driver.findElement(By.id("addRef"));
+        sendKeysToElement("gwt-uid-5", "anni puurunen");
+        sendKeysToElement("gwt-uid-7", "otsikko");
+        sendKeysToElement("gwt-uid-9", "journal");
+        sendKeysToElement("gwt-uid-11", "2015");
+        sendKeysToElement("gwt-uid-13", "vol 80");
+        WebElement element = driver.findElement(By.id("addRef"));
         element.click();
     }
     
     @When("^invalid reference information is entered$")
     public void enter_invalid_information() throws Throwable {
-        WebElement element = driver.findElement(By.id("gwt-uid-5"));
-        element.sendKeys("otsikko");
-        element = driver.findElement(By.id("gwt-uid-7"));
-        element.sendKeys("anni puurunen");
-        element = driver.findElement(By.id("addRef"));
+        sendKeysToElement("gwt-uid-5", "anni puurunen");
+        sendKeysToElement("gwt-uid-7", "otsikko");
+        sendKeysToElement("gwt-uid-9", "journal");
+        sendKeysToElement("gwt-uid-11", "2015");
+        WebElement element = driver.findElement(By.id("addRef"));
         element.click();
+    }
+
+    private void sendKeysToElement(String elementId, String keys) {
+        WebElement element = driver.findElement(By.id(elementId));
+        element.sendKeys(keys);
     }
 
     @Then("^a new reference is added$")

@@ -12,14 +12,16 @@ import org.junit.Before;
 import org.junit.Test;
 
 import ohtu.models.validators.ReferenceValidator;
+import ohtu.utilities.Fields;
 
 public class ReferenceTest {
 	private Reference ref;
 
 	@Before
 	public void initialize() {
+		new Fields();
 		ref = new Reference().set("type", "book").set("title", "Veljeni Leijonamieli").set("author", "Astrid Lindgren")
-				.set("year", "1973").set("key", "SWEBOK");
+				.set("year", "1973").set("publisher", "Raben & Sjögren").set("key", "SWEBOK");
 	}
 
 	@Test
@@ -53,7 +55,7 @@ public class ReferenceTest {
 		ref.addValidator(new ReferenceValidator() {
 			@Override
 			public boolean isValid(Reference reference) {
-				return ref.get("year").equals("1973");
+				return reference.get("year").equals("1973");
 			}
 		});
 		assertTrue(ref.isValid());
